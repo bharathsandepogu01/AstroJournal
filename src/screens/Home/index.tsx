@@ -1,5 +1,5 @@
 import useAppTheme from '@hooks/useAppTheme';
-import React from 'react';
+import { useEffect } from 'react';
 import {
   View,
   StyleSheet,
@@ -16,6 +16,7 @@ import { AppStackNavigationProp } from '@navigation/types';
 import { SCREEN_NAMES } from '@utils/constants';
 import Toggle from '@components/ui/Toggle';
 import ZodiacGrid from '@components/ZodiacGrid';
+import BootSplash from 'react-native-bootsplash';
 
 const { width } = Dimensions.get('window');
 
@@ -46,6 +47,17 @@ export default function HomeScreen() {
     const newTheme = isDarkMode ? 'light' : 'dark';
     setAppTheme(newTheme);
   };
+
+  useEffect(() => {
+    // Hide the splash screen after the app has loaded
+    (async () => {
+      try {
+        await BootSplash.hide({ fade: true });
+      } catch (error) {
+        console.error('Error hiding BootSplash:', error);
+      }
+    })();
+  }, []);
 
   return (
     <View style={styles.container}>
