@@ -48,7 +48,7 @@ export default function HoroscopeDetails() {
       {displayContent && (
         <ScrollView contentContainerStyle={styles.contentContainer}>
           <Text style={styles.emoji}>{ZODIAC_EMOJIS[sign]}</Text>
-          <Text style={styles.title}>{data.compatibility}</Text>
+          <Text style={styles.title}>{data.title}</Text>
           <Text style={styles.dateRange}>{data.date_range}</Text>
 
           <View style={styles.card}>
