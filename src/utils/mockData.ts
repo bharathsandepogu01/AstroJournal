@@ -2,6 +2,7 @@ import { IHoroscopeApiResponse } from '@services/horoscope/types';
 
 export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
   aries: {
+    title: 'Aries',
     current_date: 'August 4, 2025',
     compatibility: 'Cancer',
     lucky_time: '7am',
@@ -13,6 +14,7 @@ export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
       "It's finally time for you to think about just one thing: what makes you happy. Fortunately, that happens to be a person who feels the same way. Give yourself the evening off.",
   },
   taurus: {
+    title: 'Taurus',
     current_date: 'August 4, 2025',
     compatibility: 'Virgo',
     lucky_time: '9am',
@@ -24,6 +26,7 @@ export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
       'Focus on practical tasks today. Your grounded nature will help you find joy in structure and routine.',
   },
   gemini: {
+    title: 'Gemini',
     current_date: 'August 4, 2025',
     compatibility: 'Libra',
     lucky_time: '4pm',
@@ -35,6 +38,7 @@ export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
       'Today is a day for exploration and conversation. Let your mind wander and your voice be heard.',
   },
   cancer: {
+    title: 'Cancer',
     current_date: 'August 4, 2025',
     compatibility: 'Pisces',
     lucky_time: '2pm',
@@ -46,6 +50,7 @@ export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
       'Emotions may run deep today. Connect with family or revisit old memories to find peace.',
   },
   leo: {
+    title: 'Leo',
     current_date: 'August 4, 2025',
     compatibility: 'Aries',
     lucky_time: '1pm',
@@ -57,6 +62,7 @@ export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
       'Your energy and charm are undeniable today. Take the lead and make bold decisions.',
   },
   virgo: {
+    title: 'Virgo',
     current_date: 'August 4, 2025',
     compatibility: 'Taurus',
     lucky_time: '10am',
@@ -68,6 +74,7 @@ export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
       "Details matter today. Dive into work or chores — you'll find satisfaction in getting things done.",
   },
   libra: {
+    title: 'Libra',
     current_date: 'August 4, 2025',
     compatibility: 'Gemini',
     lucky_time: '11am',
@@ -79,6 +86,7 @@ export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
       'Seek harmony in your surroundings. A good day for mending relationships or making peace.',
   },
   scorpio: {
+    title: 'Scorpio',
     current_date: 'August 4, 2025',
     compatibility: 'Capricorn',
     lucky_time: '5pm',
@@ -90,6 +98,7 @@ export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
       "You may feel driven today. Trust your instincts but be mindful of others' feelings too.",
   },
   sagittarius: {
+    title: 'Sagittarius',
     current_date: 'August 4, 2025',
     compatibility: 'Leo',
     lucky_time: '8am',
@@ -101,6 +110,7 @@ export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
       'A perfect day for new ideas and experiences. Break the routine and try something fun.',
   },
   capricorn: {
+    title: 'Capricorn',
     current_date: 'August 4, 2025',
     compatibility: 'Scorpio',
     lucky_time: '6pm',
@@ -112,6 +122,7 @@ export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
       'Channel your discipline into progress today. It’s a great time to start or finish big tasks.',
   },
   aquarius: {
+    title: 'Aquarius',
     current_date: 'August 4, 2025',
     compatibility: 'Sagittarius',
     lucky_time: '3pm',
@@ -123,6 +134,7 @@ export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
       'Your creativity is flowing. Work on something innovative or help someone solve a tough problem.',
   },
   pisces: {
+    title: 'Pisces',
     current_date: 'August 4, 2025',
     compatibility: 'Cancer',
     lucky_time: '12pm',

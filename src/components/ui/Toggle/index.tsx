@@ -46,7 +46,7 @@ export default function Toggle(props: IToggleProps) {
 
   const translateValue = toggleAnimation.interpolate({
     inputRange: [0, 1],
-    outputRange: [0, 20],
+    outputRange: [0, 18],
   });
 
   useEffect(() => {

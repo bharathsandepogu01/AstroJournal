@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import IColorsConfig from '@styles/colors/types';
+import IColorsConfig from '@styles/types';
 
 export type AppTheme = 'dark' | 'light' | null;
 
