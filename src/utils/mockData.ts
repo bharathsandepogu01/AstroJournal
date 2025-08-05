@@ -1,0 +1,136 @@
+import { IHoroscopeApiResponse } from '@services/horoscope/types';
+
+export const HOROSCOPE_MOCKS: Record<string, IHoroscopeApiResponse> = {
+  aries: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Cancer',
+    lucky_time: '7am',
+    lucky_number: '64',
+    color: 'Spring Green',
+    date_range: 'Mar 21 - Apr 20',
+    mood: 'Relaxed',
+    description:
+      "It's finally time for you to think about just one thing: what makes you happy. Fortunately, that happens to be a person who feels the same way. Give yourself the evening off.",
+  },
+  taurus: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Virgo',
+    lucky_time: '9am',
+    lucky_number: '22',
+    color: 'Emerald',
+    date_range: 'Apr 21 - May 21',
+    mood: 'Practical',
+    description:
+      'Focus on practical tasks today. Your grounded nature will help you find joy in structure and routine.',
+  },
+  gemini: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Libra',
+    lucky_time: '4pm',
+    lucky_number: '8',
+    color: 'Yellow',
+    date_range: 'May 22 - Jun 21',
+    mood: 'Curious',
+    description:
+      'Today is a day for exploration and conversation. Let your mind wander and your voice be heard.',
+  },
+  cancer: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Pisces',
+    lucky_time: '2pm',
+    lucky_number: '14',
+    color: 'White',
+    date_range: 'Jun 22 - Jul 22',
+    mood: 'Nostalgic',
+    description:
+      'Emotions may run deep today. Connect with family or revisit old memories to find peace.',
+  },
+  leo: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Aries',
+    lucky_time: '1pm',
+    lucky_number: '19',
+    color: 'Gold',
+    date_range: 'Jul 23 - Aug 21',
+    mood: 'Confident',
+    description:
+      'Your energy and charm are undeniable today. Take the lead and make bold decisions.',
+  },
+  virgo: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Taurus',
+    lucky_time: '10am',
+    lucky_number: '3',
+    color: 'Navy Blue',
+    date_range: 'Aug 22 - Sep 23',
+    mood: 'Organized',
+    description:
+      "Details matter today. Dive into work or chores — you'll find satisfaction in getting things done.",
+  },
+  libra: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Gemini',
+    lucky_time: '11am',
+    lucky_number: '6',
+    color: 'Lavender',
+    date_range: 'Sep 24 - Oct 23',
+    mood: 'Balanced',
+    description:
+      'Seek harmony in your surroundings. A good day for mending relationships or making peace.',
+  },
+  scorpio: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Capricorn',
+    lucky_time: '5pm',
+    lucky_number: '11',
+    color: 'Maroon',
+    date_range: 'Oct 24 - Nov 22',
+    mood: 'Intense',
+    description:
+      "You may feel driven today. Trust your instincts but be mindful of others' feelings too.",
+  },
+  sagittarius: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Leo',
+    lucky_time: '8am',
+    lucky_number: '37',
+    color: 'Purple',
+    date_range: 'Nov 23 - Dec 22',
+    mood: 'Adventurous',
+    description:
+      'A perfect day for new ideas and experiences. Break the routine and try something fun.',
+  },
+  capricorn: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Scorpio',
+    lucky_time: '6pm',
+    lucky_number: '12',
+    color: 'Grey',
+    date_range: 'Dec 23 - Jan 20',
+    mood: 'Ambitious',
+    description:
+      'Channel your discipline into progress today. It’s a great time to start or finish big tasks.',
+  },
+  aquarius: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Sagittarius',
+    lucky_time: '3pm',
+    lucky_number: '26',
+    color: 'Sky Blue',
+    date_range: 'Jan 21 - Feb 19',
+    mood: 'Inventive',
+    description:
+      'Your creativity is flowing. Work on something innovative or help someone solve a tough problem.',
+  },
+  pisces: {
+    current_date: 'August 4, 2025',
+    compatibility: 'Cancer',
+    lucky_time: '12pm',
+    lucky_number: '30',
+    color: 'Sea Green',
+    date_range: 'Feb 20 - Mar 20',
+    mood: 'Dreamy',
+    description:
+      'Let your imagination lead the way today. Artistic or emotional outlets will bring joy.',
+  },
+};

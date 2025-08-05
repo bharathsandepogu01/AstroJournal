@@ -11,7 +11,7 @@ import { DEFAULT_APP_THEME, USER_APP_THEME_PREFERENCE } from '@utils/constants';
 import { IAppThemeProviderProps, AppTheme, IAppThemeContext } from './types';
 import getAppThemeColorsConfig from '@styles/colors';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-import { getItem, setItem } from '@utils/storage';
+import { mmkvStorage } from '@utils/storage';
 
 export const AppThemeContext = createContext<IAppThemeContext>({
   appTheme: DEFAULT_APP_THEME,
@@ -25,7 +25,7 @@ export default function AppThemeProvider(props: IAppThemeProviderProps) {
 
   useEffect(() => {
     function checkUserPreferenceColorScheme() {
-      const userAppThemePreference = getItem<AppTheme>(
+      const userAppThemePreference = mmkvStorage.getItem<AppTheme>(
         USER_APP_THEME_PREFERENCE,
       );
       if (userAppThemePreference) {
@@ -39,7 +39,7 @@ export default function AppThemeProvider(props: IAppThemeProviderProps) {
 
   const handleSetAppTheme = useCallback((theme: AppTheme) => {
     setAppTheme(theme);
-    setItem(USER_APP_THEME_PREFERENCE, theme);
+    mmkvStorage.setItem(USER_APP_THEME_PREFERENCE, theme);
   }, []);
 
   const value: IAppThemeContext = useMemo(

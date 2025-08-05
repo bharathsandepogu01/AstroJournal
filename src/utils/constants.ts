@@ -4,6 +4,7 @@ export const API_URL = 'https://aztro.sameerkumar.website';
 export const SCREEN_NAMES = {
   HOME: 'Home',
   JOURNAL: 'Journal',
+  HOROSCOPE_DETAILS: 'HoroscopeDetails',
 };
 
 // app theme
